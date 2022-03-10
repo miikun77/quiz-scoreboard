@@ -11,12 +11,17 @@
 
 <body>
   <div class="scoreboard">
-    <div class="scoreboard__name scoreboard__name--one">Player One</div>
-    <div class="scoreboard__name scoreboard__name--two">Player Two</div>
-    <div class="scoreboard__name scoreboard__name--three">Player Three</div>
-    <div class="scoreboard__score" id="correct1">0</div>
-    <div class="scoreboard__score" id="correct2">0</div>
-    <div class="scoreboard__score" id="correct3">0</div>
+    <div class="label" contenteditable="true">n〇m×</div>
+    <div class="scoreboard__name scoreboard__name--one" contenteditable="true">Player One</div>
+    <div class="scoreboard__name scoreboard__name--two" contenteditable="true">Player Two</div>
+    <div class="scoreboard__name scoreboard__name--three" contenteditable="true">Player Three</div>
+    <div class="scoreboard__name scoreboard__name--four" contenteditable="true">Player Four</div>
+    <div class="label">正解</div>
+    <div class="scoreboard__score" id="btn1">0</div>
+    <div class="scoreboard__score" id="btn2">0</div>
+    <div class="scoreboard__score" id="btn3">0</div>
+    <div class="scoreboard__score" id="btn4">0</div>
+    <div></div>
     <div class="scoreboard__controls">
       <button class="scoreboard__control-button" id="1" onclick="minuscounter()">-</button>
       <button class="scoreboard__control-button" id="1.1" onclick="pluscounter()">+</button>
@@ -28,6 +33,32 @@
     <div class="scoreboard__controls">
       <button class="scoreboard__control-button" id="3" onclick="minuscounter()">-</button>
       <button class="scoreboard__control-button" id="3.1" onclick="pluscounter()">+</button>
+    </div>
+    <div class="scoreboard__controls">
+      <button class="scoreboard__control-button" id="4" onclick="minuscounter()">-</button>
+      <button class="scoreboard__control-button" id="4.1" onclick="pluscounter()">+</button>
+    </div>
+    <div class="label">不正解</div>
+    <div class="scoreboard__score" id="btn5">0</div>
+    <div class="scoreboard__score" id="btn6">0</div>
+    <div class="scoreboard__score" id="btn7">0</div>
+    <div class="scoreboard__score" id="btn8">0</div>
+    <div></div>
+    <div class="scoreboard__controls">
+      <button class="scoreboard__control-button" id="5" onclick="minuscounter()">-</button>
+      <button class="scoreboard__control-button" id="5.1" onclick="pluscounter()">+</button>
+    </div>
+    <div class="scoreboard__controls">
+      <button class="scoreboard__control-button" id="6" onclick="minuscounter()">-</button>
+      <button class="scoreboard__control-button" id="6.1" onclick="pluscounter()">+</button>
+    </div>
+    <div class="scoreboard__controls">
+      <button class="scoreboard__control-button" id="7" onclick="minuscounter()">-</button>
+      <button class="scoreboard__control-button" id="7.1" onclick="pluscounter()">+</button>
+    </div>
+    <div class="scoreboard__controls">
+      <button class="scoreboard__control-button" id="8" onclick="minuscounter()">-</button>
+      <button class="scoreboard__control-button" id="8.1" onclick="pluscounter()">+</button>
     </div>
   </div>
   <script src="main.js"></script>

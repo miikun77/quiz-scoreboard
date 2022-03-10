@@ -1,19 +1,24 @@
 .scoreboard {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 500px;
+  grid-template-columns: 100px repeat(4, 1fr);
+  padding-right: 2px;
   font-family: "Helvetica", sans-serif;
 }
 
 .scoreboard__name,
 .scoreboard__score {
-  padding: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
   text-align: center;
+  font-size: xx-large;
 }
 
 .scoreboard__name {
   font-weight: bold;
-  border-bottom: 1px solid #ddd;
+  font-size: 3em;
+  border-bottom: 2px solid #ddd;
 }
 
 .scoreboard__name--one {
@@ -28,12 +33,17 @@
   color: #f00808;
 }
 
+.scoreboard__name--four {
+  color: #08d5f0;
+}
+
 .scoreboard__score {
-  font-size: 2em;
+  font-size: 5em;
 }
 
 .scoreboard__controls {
   display: flex;
+  height: 50px;
 }
 
 .scoreboard__control-button {
@@ -41,7 +51,7 @@
   border: none;
   background: #eee;
   cursor: pointer;
-  font-size: 1 em;
+  font-size: 3em;
 }
 
 .scoreboard__control-button:hover {
@@ -50,4 +60,11 @@
 
 .scoreboard__control-button:active {
   background: #ccc;
+}
+
+.label {
+  font-size: 3em;
+  writing-mode: vertical-rl;
+  padding-top: 1em;
+  padding-left: none;
 }
