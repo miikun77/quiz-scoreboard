@@ -3,6 +3,7 @@
   grid-template-columns: 100px repeat(4, 1fr);
   padding-right: 2px;
   font-family: "Helvetica", sans-serif;
+  touch-action: manipulation;
 }
 
 .scoreboard__name,
